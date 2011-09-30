@@ -12,6 +12,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.bukkit:bukkit:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.bukkit:bukkit-permissions:0.1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.nijiko:iCo6:1.0" level="project" />
+    <orderEntry type="library" name="Maven: ru.tehkode:PermissionsEx:1.14" level="project" />
+    <orderEntry type="library" name="Maven: de.bananaco:bPermissions:SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.bukkit:craftbukkit:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.getspout:spoutapi:dev-SNAPSHOT" level="project" />
   </component>
 </module>
 
