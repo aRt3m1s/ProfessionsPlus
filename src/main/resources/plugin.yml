@@ -1,0 +1,80 @@
+name: ProfessionsPlus
+version: 1.0
+description: Advance Permission Group Selection Plugin
+author: ArtemisTheSecond
+website: https://github.com/aRt3m1s/ProfessionsPlus
+main: aep.artemis.professionsplus.ProfessionsPlus
+softdepend: [iConomy,PermissionsEx,bPermissions,PermissionsBukkit]
+
+commands:
+  professions:
+    description: All Profession related commands
+    aliases: [p,pp,pfs,prof]
+    usage: |
+    ----------------------------------------------------
+    | Command: /professions [option] <parameters>      |
+    | Shortcuts: use /p, /pp, /pfs, /prof              |
+    | /pp help to display this                         |
+    | /pp ? <option> for help on <option>              |
+    | [option](required): join, leave, gReq, list, me, |
+    |   user, fixGroup, fixProf, addProf, delProf,     |
+    |   limit, time, joinCost, leaveCost, reload       |
+    |   help or ?                                      |
+    | <parameters>(optional): §adepends on option      |
+    ----------------------------------------------------
+
+permissions:
+  professions.join:
+    description: joins a Profession
+    default: false
+  professions.leave:
+    description: leaves a Profession
+    default: false
+  professions.gReq:
+    description: shows Group Requirements
+    default: false
+  professions.list:
+    description: list Professions and Groups
+    default: false
+  professions.me:
+    description: shows own Professions
+    default: false
+  professions.user:
+    description: shows users Professions
+    default: false
+  professions.fix.group:
+    description: fixes groups.yml
+    default: false
+  professions.fix.prof:
+    description: fixes professions.yml
+    default: false
+  professions.config:
+    description: manipulates professions.yml
+    default: false
+  professions.reload:
+    description: reloads Professions
+    default: false
+  professions.basic:
+    description: allows usage of some Professions Basic commands
+    default: false
+    children:
+      professions.join: true
+      professions.leave: true
+      professions.gReq: true
+      professions.list: true
+      professions.me: true
+  professions.advance:
+    description: allows usage of Professions Advance commands
+    default: false
+    children:
+      professions.basic: true
+      professions.user: true
+  professions.admin:
+    description: allows usage of all Professions commands
+    default: false
+    children:
+      professions.advance: true
+      professions.fix.group: true
+      professions.fix.prof: true
+      professions.config: true
+      professions.reload: true
